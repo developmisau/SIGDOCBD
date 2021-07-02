@@ -1,0 +1,97 @@
+/*Principal depois do login*/
+body {
+	background:#2C67AB;
+}
+
+#header {
+	background-color:#2C67AB;
+	/*background-image: linear-gradient(#0074F9, white);*/
+   margin-top:10px;
+}
+#sair button {
+	background-color: #DF6266;
+}
+
+#usuario li {
+	color: white;
+	font-size: 14px;
+}
+
+/*cor de menu*/
+/*#sidebar > ul{border-bottom: 3px solid #37414b}*/
+#sidebar > ul > li {
+	/*linha de semparacao dos menus*/
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+}
+/*cor do dashbord activo*/
+#sidebar > ul > li.active {
+    background-color: #E6E7E8; 
+}
+
+/*cor dos menus activos*/
+/*#sidebar > ul > li.active a {
+    background-color: #F9C10C; 
+}
+*/
+/*cores das letras de menus do dashbord*/
+#sidebar > ul > li.active a{ color:black; text-decoration:none;}
+
+
+
+/*Seta preta*/
+#sidebar > ul > li > a > .label {
+	background-color:black;
+}
+/*cor de menu principal*/
+#sidebar > ul > li > a:hover {
+	background-color: #E6E7E8; color:black;
+}
+#sidebar > ul li ul {
+	background-color: #D3D9E0;
+}
+/*mouse a rolar nos menus*/
+#sidebar > ul li ul li a{ color:black;}
+#sidebar > ul li ul li a:hover, #sidebar > ul li ul li.active a {
+	color: black;
+	background-color: #9FD5B9;
+}
+
+
+#sair input[type=text] {
+	background-color: #47515b; color: #fff; 
+}
+#sair input[type=text]:focus {
+	color: #2e363f; color: #fff; box-shadow:none;
+}
+.dropdown-menu li a:hover, .dropdown-menu .active a, .dropdown-menu .active a:hover {
+    color: #eeeeee;
+	background:#666;
+   
+}
+.top_message{ float:right; padding:20px 12px; position:relative; top:-13px; border-left:1px solid #3D3A37; font-size:14px; line-height:20px; *line-height:20px; color:#333; text-align:center;  vertical-align:middle; cursor:pointer; }
+.top_message:hover{ background:#000}
+.rightzero{ right:0px; display:none;}
+@media (max-width: 480px) {
+	#sidebar > a {
+		background:#27a9e3;
+		
+	}
+	.quick-actions_homepage .quick-actions li{ min-width:100%;}
+}
+@media (min-width: 768px) and (max-width: 970px) {.quick-actions_homepage .quick-actions li{ min-width:20.5%;}}
+@media (min-width: 481px) and (max-width: 767px) {
+	#sidebar > ul ul:before {
+	}
+	#sidebar > ul ul:after {
+		border-right: 6px solid #222222;
+    }
+	.quick-actions_homepage .quick-actions li{ min-width:47%;}
+}
+div.tagsinput { border:1px solid #CCC; background: #FFF; padding:5px; width:300px; height:100px; overflow-y: auto;}
+div.tagsinput span.tag { border: 1px solid #a5d24a; -moz-border-radius:2px; -webkit-border-radius:2px; display: block; float: left; padding: 5px; text-decoration:none; background: #cde69c; color: #638421; margin-right: 5px; margin-bottom:5px;font-family: helvetica;  font-size:13px;}
+div.tagsinput span.tag a { font-weight: bold; color: #82ad2b; text-decoration:none; font-size: 11px;  } 
+div.tagsinput input { width:80px; margin:0px; font-family: helvetica; font-size: 13px; border:1px solid transparent; padding:5px; background: transparent; color: #000; outline:0px;  margin-right:5px; margin-bottom:5px; }
+div.tagsinput div { display:block; float: left; } 
+.tags_clear { clear: both; width: 100%; height: 0px; }
+.not_valid {background: #FBD8DB !important; color: #90111A !important;}
